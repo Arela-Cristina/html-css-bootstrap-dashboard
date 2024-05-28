@@ -1,0 +1,9 @@
+[class*="col"] {
+    min-height: 40px;
+    background-color: pink;
+    border: solid 1px rgba(255, 0, 191, 0.836);
+}
+
+.cri-w-10 {
+    width: 10%
+}
