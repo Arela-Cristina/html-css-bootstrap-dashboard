@@ -4,14 +4,26 @@
     border: solid 1px rgba(255, 0, 191, 0.836);
 }
 
-.cri-w-50px {
-    width: 50px
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cri-w-40px {
+    width: 40px
 }
 
 header .col-12 {
-    height: 8vh;
+    height: 60px;
 }
 
-section .col-2 {
-    height: 92vh;
+main {
+    width: 85vw;
+}
+
+nav.col {
+    width: 15vw;
+    height: calc(100vh - 60px);
+
 }
