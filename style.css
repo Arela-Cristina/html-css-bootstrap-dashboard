@@ -20,10 +20,17 @@ header .col-12 {
 
 main {
     width: 85vw;
+    height: calc(100vh - 60px);
 }
 
 nav.col {
     width: 15vw;
     height: calc(100vh - 60px);
 
+}
+
+/*DEBUG*/
+
+.cri-bg-yellow {
+    background-color: yellowgreen;
 }
