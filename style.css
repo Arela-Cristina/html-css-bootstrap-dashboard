@@ -14,17 +14,17 @@
     width: 40px
 }
 
-header .col-12 {
+header .row {
     height: 60px;
 }
 
 main {
-    width: 85vw;
+    width: 90vw;
     height: calc(100vh - 60px);
 }
 
 nav.col {
-    width: 15vw;
+    width: 10vw;
     height: calc(100vh - 60px);
 
 }
