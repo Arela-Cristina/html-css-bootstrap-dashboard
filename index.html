@@ -38,30 +38,22 @@
                     </datalist>
                 </form>
             </div>
-            <!-- <div class="col-2 d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-bell">
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    </ul>
-                </i>
-            </div> -->
             <div class="col-2 d-flex justify-content-center align-items-center">
-                <div  data-bs-toggle="dropdown" aria-expanded="false">
+                <div data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bell"></i>
                 </div>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <!-- MENU MOBILE SIDE BAR -->
+
     <section class="d-flex">
+        <!-- MENU MOBILE SIDE BAR -->
         <nav class="col d-flex justify-content-between flex-column py-3 align-items-center">
             <div class="d-flex flex-column gap-3">
                 <a class="text-decoration-none" href="#"><i class="fa-solid fa-house"></i></a>
@@ -77,13 +69,81 @@
         <main class="overflow-scroll">
             <!-- HEADER MAIN -->
             <div class="container-fluid">
+
+
                 <!-- BLOCCO 1 -->
                 <div class="row">
                     <div class="col py-2">
                         <span>nuovo studente</span>
-                        <i class="fa-solid fa-plus"></i>
+                        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></div>
+
+                        <div class="offcanvas offcanvas-end w-100" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisce un nuovo
+                                    studente
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder=""
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Citta</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected="">Select...</option>
+                                        <option value="1">Lombardia</option>
+                                        <option value="2">Valle d'Aosta</option>
+                                        <option value="3">Toscana</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">C.A.P</label>
+                                    <input type="email" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
                 <!-- BLOCCO 2 -->
                 <div class="row">
                     <div class="col d-flex flex-wrap gap-3 py-2">
