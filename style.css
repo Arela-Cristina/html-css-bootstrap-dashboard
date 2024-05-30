@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 [class*="col"] {
     /* min-height: 40px; */
-    background-color: pink;
-    border: solid 1px rgba(255, 0, 191, 0.836);
+    /* background-color: pink; */
+    /* border: solid 1px rgba(255, 0, 191, 0.836); */
 }
 
 * {
@@ -18,8 +20,13 @@
     width: 100px
 }
 
+body {
+    background-color: #f8f9fa;
+    font-family: "Roboto", sans-serif;
+}
+
 header .row {
-    height: 60px;
+    height: 30px;
 }
 
 main {
@@ -33,8 +40,98 @@ nav.col {
 
 }
 
-/*DEBUG*/
+/*FONT-AWESOME*/
+.fa-solid.fa-question {
+    border: 1px solid #5c5959;
+    border-radius: 50px;
+    background-color: #5c5959;
+    padding: 4px 6px;
+    font-size: 10px;
+    color: white
+}
 
-.cri-bg-yellow {
-    background-color: yellowgreen;
+.fa-solid.fa-code {
+    background-color: orange;
+    padding: 6px 4px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 6px;
+}
+
+.fa-solid.fa-pencil {
+    border: 1px solid gray;
+    padding: 4px 4px;
+    border-radius: 3px;
+}
+
+.fa-solid.fa-trash-can {
+    border: 1px solid gray;
+    padding: 4px 5px;
+    border-radius: 3px;
+}
+
+.fa-solid.fa-bell {
+    color: #ff8f00;
+}
+
+.fa-plus-style {
+    border: 1px solid white;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+/*BOOLEAN CAPTION DETAILS*/
+
+.cri-caption-style {
+    background-color: #165bba;
+    padding: 1px 7px;
+    border-radius: 10px;
+}
+
+/*BG-COLOR*/
+.bg-smokewhite {
+    background-color: #e5e5e5;
+}
+
+.bg-darkwhite {
+    background-color: #f7f7f7;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-blue {
+    background-color: #082036;
+}
+
+.bg-skyblue {
+    background-color: #1b72e8;
+}
+
+/*COLOR*/
+.cri-white {
+    color: white
+}
+
+.cri-black {
+    color: black;
+}
+
+/*FONT SIZE*/
+.cri-fs-12 {
+    font-size: 12px;
+}
+
+/*debug*/
+.debug-pink {
+    background-color: pink;
+}
+
+.cri-all-p {
+    padding: 10px 10px;
+}
+
+.cri-pb {
+    padding-bottom: 20px;
 }

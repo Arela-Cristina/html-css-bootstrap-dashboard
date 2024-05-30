@@ -15,7 +15,7 @@
 <body>
     <!-- HEADER -->
     <header class="container-fluid">
-        <div class="row">
+        <div class="row bg-white my-2 align-content-center">
             <div class="col-2 d-flex justify-content-center align-items-center">
                 <!-- header logo mobile -->
                 <img class="cri-w-40px d-lg-none" src="img/mobile-logo.png" alt="logo boolean">
@@ -25,7 +25,7 @@
 
             <div class="col-8 d-flex justify-content-center align-items-center">
                 <form class="w-100">
-                    <input class="form-control form-control-sm" list="datalistOptions" type="text"
+                    <input class="form-control form-control-sm bg-smokewhite" list="datalistOptions" type="text"
                         placeholder="Prova a cercare lezioni di Laravel" aria-label=".form-control-sm example">
                     <datalist id="datalistOptions">
                         <option value="Lezioni di Laravel">
@@ -60,26 +60,26 @@
 
     <section class="d-flex">
         <!-- MENU MOBILE SIDE BAR -->
-        <nav class="col d-flex justify-content-between flex-column py-3 align-items-center">
+        <nav class="col bg-blue d-flex justify-content-between flex-column py-3 align-items-center">
             <div class="d-flex flex-column gap-3">
 
-                <a class="text-decoration-none d-flex align-items-center" href="#">
+                <a class="text-decoration-none d-flex align-items-center cri-white cri-fs-12" href="#">
                     <i class="fa-solid fa-house"></i>
                     <span class="d-none d-lg-flex ps-2">Home</span>
                 </a>
 
 
-                <a class="text-decoration-none d-flex align-items-center" href="#"><i
+                <a class="text-decoration-none d-flex align-items-center cri-white cri-fs-12" href="#"><i
                         class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-flex ps-2">Stats</span></i></a>
 
 
-                <a class="text-decoration-none d-flex align-items-center" href="#"><i
+                <a class="text-decoration-none d-flex align-items-center cri-white cri-fs-12" href="#"><i
                         class="fa-solid fa-signal"></i><span class="d-none d-lg-flex ps-2">Signals</span></i></a>
 
             </div>
             <div>
-                <a class="text-decoration-none d-flex align-items-center" href="#"><i class="fa-solid fa-gear"></i><span
-                        class="d-none d-lg-flex ps-2">Admin</span></a>
+                <a class="text-decoration-none d-flex align-items-center cri-white cri-fs-12" href="#"><i
+                        class="fa-solid fa-gear"></i><span class="d-none d-lg-flex ps-2">Admin</span></a>
             </div>
         </nav>
 
@@ -87,14 +87,15 @@
         <main class="overflow-scroll">
             <!-- HEADER MAIN -->
             <div class="container-fluid">
-                <div class="row">
+                <div class="row bg-skyblue cri-white py-3">
                     <!-- BLOCCO 1 -->
-                    <div class="col-12 col-md-4 col-lg-3 order-md-2  py-2">
-                        <span>nuovo studente</span>
+                    <div class="col-12 col-md-4 col-lg-3 d-flex order-md-2">
+                        <span class="cri-fs-12 pe-3">Nuovo Studente</span>
                         <!-- OFFCANVAS -->
                         <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></div>
-                        <div class="offcanvas offcanvas-end w-100" data-bs-scroll="true" tabindex="-1"
+                            aria-controls="offcanvasWithBothOptions"><i
+                                class="fa-solid fa-plus cri-fs-12 fa-plus-style"></i></div>
+                        <div class="offcanvas offcanvas-end w-100 cri-black" data-bs-scroll="true" tabindex="-1"
                             id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisce un nuovo
@@ -157,45 +158,46 @@
                         </div>
                     </div>
                     <!-- BLOCCO 2 -->
-                    <div class="col-12 col-md-4 col-lg-6 d-flex flex-wrap flex-column py-2">
-                        <div class="d-flex">
-                            <h1>BOOLEAN</h1>
-                            <span>Piano Base</span>
+                    <div class="col-12 col-md-4 col-lg-6 d-flex flex-wrap flex-column justify-content-between">
+                        <div class="d-flex gap-3">
+                            <h4>BOOLEAN</h4>
+                            <span class="cri-caption-style cri-h-18 align-self-center cri-fs-12">Piano Base</span>
                         </div>
                         <div class="d-flex gap-3">
-                            <div class="d-flex">
-                                <span>3 App</span>
-                                <i class="fa-solid fa-forward"></i>
-                                <i class="fa-solid fa-plus"></i>
+                            <div class="d-flex align-items-center gap-2 cri-fs-12">
+                                <span class="cri-caption-style">3 App</span>
+                                <div class="d-md-flex d-lg-flex"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="d-md-flex d-lg-none cri-caption-style"><i class="fa-solid fa-plus"></i>
+                                </div>
                             </div>
 
                             <!-- versione web -->
-                            <div class="d-flex gap-3">
-                                <span class="d-none d-lg-flex">Boolean moile app</span>
-                                <span class="d-none d-lg-flex">Piano web app</span>
-                                <span class="d-none d-lg-flex">Piano blog app</span>
+                            <div class="d-flex gap-3 cri-fs-12">
+                                <span class="d-none d-lg-flex cri-caption-style">Boolean moile app</span>
+                                <span class="d-none d-lg-flex cri-caption-style">Piano web app</span>
+                                <span class="d-none d-lg-flex cri-caption-style">Piano blog app</span>
                             </div>
                         </div>
                     </div>
                     <!-- BLOCCO 3 -->
-                    <div class="col-12 col-md-4 col-lg-3 py-2">
-                        <span>Studenti online negli ultimi 30 minuti</span>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <span class="cri-fs-12">Studenti online negli ultimi 30 minuti</span>
                         <h2>125</h2>
                     </div>
                 </div>
             </div>
 
             <!-- CONTENT -->
-            <section class="d-flex flex-wrap">
+            <section class="d-flex flex-wrap cri-all-p debug-pink">
                 <!-- CONTENT SECTION 1-->
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-8 cri-all-p">
                     <div class="container-fluid">
                         <!-- PROSSIME CLASSI -->
                         <div class="row d-flex justify-content-center">
-                            <div class="col-12 d-flex flex-column px-2 py-2">
-                                <h1>Prossime Classi</h1>
+                            <div class="col-12 d-flex flex-column bg-darkwhite px-2 py-2">
+                                <h4>Prossime Classi</h4>
                             </div>
-                            <table class="table table-responsive-md cri-bg-yellow">
+                            <table class="table bg-white table-responsive-md cri-fs-12">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nome</th>
@@ -214,7 +216,7 @@
 
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -225,7 +227,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -236,7 +238,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -247,7 +249,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -258,7 +260,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -269,7 +271,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -280,7 +282,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -291,7 +293,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td>Done</td>
                                         <td>
-                                            <div class="d-flex"><i class="fa-solid fa-pencil"></i>
+                                            <div class="d-flex gap-2"><i class="fa-solid fa-pencil"></i>
                                                 <i class="fa-solid fa-trash-can"></i>
                                             </div>
                                         </td>
@@ -303,10 +305,10 @@
 
                         <!-- FAQ ACCORDEON-->
                         <div class="row">
-                            <div class="col-12 d-flex flex-column px-2 py-2">
-                                <h1>F.A.Q.</h1>
+                            <div class="col-12 d-flex flex-column bg-darkwhite px-2 py-2">
+                                <h4>F.A.Q.</h4>
                             </div>
-                            <div class="accordion accordion-flush col-12" id="accordionFlushExample">
+                            <div class="accordion accordion-flush bg-white" id="accordionFlushExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" type="button"
@@ -352,14 +354,18 @@
                 </div>
 
                 <!-- CONTENT SECTION 2-->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 cri-all-p">
                     <div class="container-fluid">
                         <!-- TODO-->
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-12 d-flex flex-column px-2 py-2">
-                                <h1>Todo</h1>
-                            </div>
-                            <div class="col-12 d-flex flex-column px-3 py-3">
+
+                        <div class="row d-flex justify-content-center cri-pb">
+                            <!-- <div class="col-12 d-flex flex-column bg-darkwhite px-2 py-2">
+                                <h4>Todo</h4>
+                            </div> -->
+                            <div class="col-12 d-flex flex-column bg-white px-3 py-3">
+                                <!-- <div class="col-12 d-flex flex-column bg-darkwhite px-2 py-2"> -->
+                                    <h4>Todo</h4>
+                                <!-- </div> -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -384,13 +390,14 @@
                         </div>
 
 
+
                         <!-- UTENTI ATTIVI-->
-                        <div class="row cri-bg-yellow px-4 py-4">
+                        <div class="row bg-darkwhite px-1 py-1">
                             <div class="container-fluid w-100">
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-12 d-flex flex-column px-4 py-4">
                                         <img src="img/stats.jpeg" alt="esquema a barre utenti attivi">
-                                        <h2 class="pt-4 py-2">Uttenti Attivi</h2>
+                                        <h5 class="pt-4 py-2">Uttenti Attivi</h5>
                                         <span>Lista degli uttenti attivi in piataforma nell'ultimo mese</span>
                                     </div>
                                 </div>
