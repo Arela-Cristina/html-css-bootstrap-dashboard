@@ -16,10 +16,13 @@
     <!-- HEADER -->
     <header class="container-fluid">
         <div class="row">
-
             <div class="col-2 d-flex justify-content-center align-items-center">
-                <img class="cri-w-40px" src="img/mobile-logo.png" alt="logo boolean">
+                <!-- header logo mobile -->
+                <img class="cri-w-40px d-lg-none" src="img/mobile-logo.png" alt="logo boolean">
+                <!-- header logo desktop -->
+                <img class="cri-w-100px d-none d-lg-flex" src="img/logo.svg" alt="logo boolean">
             </div>
+
             <div class="col-8 d-flex justify-content-center align-items-center">
                 <form class="w-100">
                     <input class="form-control form-control-sm" list="datalistOptions" type="text"
@@ -38,7 +41,10 @@
                     </datalist>
                 </form>
             </div>
-            <div class="col-2 d-flex justify-content-center align-items-center">
+            <div class="col-2 d-flex justify-content-center align-items-center gap-3">
+                <div class="d-none d-lg-flex"><i class="fa-solid fa-list"></i></div>
+                <div class="d-none d-lg-flex"><i class="fa-solid fa-question"></i></div>
+                <div class="d-none d-lg-flex"><i class="fa-solid fa-ellipsis-vertical"></i></div>
                 <div data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bell"></i>
                 </div>
@@ -56,12 +62,24 @@
         <!-- MENU MOBILE SIDE BAR -->
         <nav class="col d-flex justify-content-between flex-column py-3 align-items-center">
             <div class="d-flex flex-column gap-3">
-                <a class="text-decoration-none" href="#"><i class="fa-solid fa-house"></i></a>
-                <a class="text-decoration-none" href="#"><i class="fa-solid fa-signal"></i></a>
-                <a class="text-decoration-none" href="#"><i class="fa-solid fa-signal"></i></a>
+
+                <a class="text-decoration-none d-flex align-items-center" href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-flex ps-2">Home</span>
+                </a>
+
+
+                <a class="text-decoration-none d-flex align-items-center" href="#"><i
+                        class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-flex ps-2">Stats</span></i></a>
+
+
+                <a class="text-decoration-none d-flex align-items-center" href="#"><i
+                        class="fa-solid fa-signal"></i><span class="d-none d-lg-flex ps-2">Signals</span></i></a>
+
             </div>
             <div>
-                <a class="text-decoration-none" href="#"><i class="fa-solid fa-gear"></i></a>
+                <a class="text-decoration-none d-flex align-items-center" href="#"><i class="fa-solid fa-gear"></i><span
+                        class="d-none d-lg-flex ps-2">Admin</span></a>
             </div>
         </nav>
 
@@ -69,9 +87,9 @@
         <main class="overflow-scroll">
             <!-- HEADER MAIN -->
             <div class="container-fluid">
-                <!-- BLOCCO 1 -->
                 <div class="row">
-                    <div class="col-12 col-md-4 order-md-2  py-2">
+                    <!-- BLOCCO 1 -->
+                    <div class="col-12 col-md-4 col-lg-3 order-md-2  py-2">
                         <span>nuovo studente</span>
                         <!-- OFFCANVAS -->
                         <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
@@ -139,15 +157,28 @@
                         </div>
                     </div>
                     <!-- BLOCCO 2 -->
-                    <div class="col-12 col-md-4 d-flex flex-wrap gap-3 py-2">
-                        <h1>BOOLEAN</h1>
-                        <span>Piano Base</span>
-                        <span>3 App</span>
-                        <i class="fa-solid fa-forward"></i>
-                        <i class="fa-solid fa-plus"></i>
+                    <div class="col-12 col-md-4 col-lg-6 d-flex flex-wrap flex-column py-2">
+                        <div class="d-flex">
+                            <h1>BOOLEAN</h1>
+                            <span>Piano Base</span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="d-flex">
+                                <span>3 App</span>
+                                <i class="fa-solid fa-forward"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+
+                            <!-- versione web -->
+                            <div class="d-flex gap-3">
+                                <span class="d-none d-lg-flex">Boolean moile app</span>
+                                <span class="d-none d-lg-flex">Piano web app</span>
+                                <span class="d-none d-lg-flex">Piano blog app</span>
+                            </div>
+                        </div>
                     </div>
                     <!-- BLOCCO 3 -->
-                    <div class="col-12 col-md-4 py-2">
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
                         <span>Studenti online negli ultimi 30 minuti</span>
                         <h2>125</h2>
                     </div>
@@ -155,8 +186,8 @@
             </div>
 
             <!-- CONTENT -->
-            <!-- CONTENT SECTION 1-->
             <section class="d-flex flex-wrap">
+                <!-- CONTENT SECTION 1-->
                 <div class="col-12 col-lg-8">
                     <div class="container-fluid">
                         <!-- PROSSIME CLASSI -->
@@ -351,7 +382,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
                         <!-- UTENTI ATTIVI-->
                         <div class="row cri-bg-yellow px-4 py-4">
