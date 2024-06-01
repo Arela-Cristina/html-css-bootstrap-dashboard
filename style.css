@@ -37,7 +37,6 @@ main {
 nav.col {
     width: 10vw;
     height: calc(100vh - 60px);
-
 }
 
 /*FONT-AWESOME*/
@@ -80,8 +79,7 @@ nav.col {
     border-radius: 4px;
 }
 
-/*BOOLEAN CAPTION DETAILS*/
-
+/*BOOLEAN HEADER MAIN CAPTION DETAILS*/
 .cri-caption-style {
     background-color: #165bba;
     padding: 1px 7px;
@@ -123,15 +121,10 @@ nav.col {
     font-size: 12px;
 }
 
-/*debug*/
-.debug-pink {
-    background-color: pink;
+.cri-p-uttenti {
+    padding: 0 15px;
 }
 
-.cri-all-p {
-    padding: 10px 10px;
-}
-
-.cri-pb {
-    padding-bottom: 20px;
+.cri-pr {
+    padding-right: 90px;
 }
